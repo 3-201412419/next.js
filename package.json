@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "vercel-build": "npm install --save-dev typescript @types/node && next build"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "18.3.3"
+    "@types/node": "^22.2.0",
+    "@types/react": "18.3.3",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "next": "^14.2.5",
