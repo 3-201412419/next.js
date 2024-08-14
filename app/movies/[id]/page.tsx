@@ -2,7 +2,8 @@ import { Suspense } from "react"
 import { API_URL } from "../../constants"
 import MovieInfo, { getMovie } from "../../../components/movie-info"
 import MovieVideos from "../../../components/movie-videos"
-
+import Movie from "../../../components/movie"
+import MovieCredit from "../../../components/movie-credits"
 
 
 // async function getvideos(id:string){
@@ -31,6 +32,9 @@ export default async function MovieDetailPage({params : {id}, } : IParams) {
             <MovieInfo  id = {id}/>
         </Suspense>
         <Suspense fallback = {<h4>Loading video...</h4>}>
-            <MovieVideos  id = {id} />
+            <MovieVideos id = {id} />
+        </Suspense>
+        <Suspense fallback = {<h4>Loading credit...</h4>}>
+            <MovieCredit id = {id} />
         </Suspense>
     </div>}

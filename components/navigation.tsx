@@ -12,6 +12,7 @@ export default function Navigation(){
             <ul>
                 <li><Link href = "/">Home</Link> {path === "/" ? "🔥" : "" }</li>
                 <li><Link href = "/about-us">About Us</Link>{path === "/about-us" ? "🔥" : "" }</li>
+                <li><Link href = "/credits">Credits</Link>{path === "/credits" ? "🔥" : "" }</li>
             </ul>
         </nav>
     )
